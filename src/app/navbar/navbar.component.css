@@ -1,0 +1,9 @@
+li{
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.bg-dark{
+    background-color: #212121 !important;
+}

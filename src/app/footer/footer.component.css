@@ -1,0 +1,33 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #212121;
+    margin: 0;
+}
+
+i{
+    color: white;
+    font-size: 2rem;
+    padding: 2%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.fa-facebook-f:hover{
+    background-color: #3b5999;
+}
+
+.fa-paypal:hover{
+    background-color: #003087;
+}
+
+.fa-github:hover{
+    background-color: #131418;
+}
+
+.fa-globe-americas:hover{
+    background-color: #21759b;
+}

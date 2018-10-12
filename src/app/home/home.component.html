@@ -1,0 +1,20 @@
+<section id="tools" class="py-5 main-bg">
+  <div class="row container-fluid m-auto">
+
+    <div class="col-lg-3 col-md-6 p-3" *ngFor="let tool of tools">
+      <a [routerLink]="tool.routerLink">
+        <div class="card mx-auto my-2" style="width: 18rem;">
+          <img class="card-img-top" [src]="tool.img" [alt]="tool.alt">
+
+          <div class="overlay">
+            <h2 class="overlay-text">{{tool.name}}</h2>
+          </div>
+
+          <h3 class="d-block d-md-none card-title text-dark m-0">{{tool.name}}</h3>
+
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</section>

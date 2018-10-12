@@ -1,0 +1,131 @@
+<section class="main-bg p-5">
+
+  <!-- Top Title / Large Screen -->
+  <div id="top" class="media d-none d-md-flex">
+    <img class="mr-3 align-self-center section-icon" src="assets/images/headings/merc-icon.svg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h1 class="mt-0 section-title">Mercenaries</h1>
+      <h5 class="section-secondary-title">You Pay We Hit</h5>
+    </div>
+  </div>
+  <!-- Top Title / Large Screen -->
+
+  <!-- Top Title / Small Screen -->
+  <div class="d-block d-md-none text-center my-5">
+    <img class="section-icon" src="assets/images/headings/merc-icon.svg">
+    <h1 class="mt-0 section-title">Mercenaries</h1>
+    <blockquote class="section-secondary-title">You Pay We Hit</blockquote>
+  </div>
+  <!-- Top Title / Small Screen -->
+
+  <section class="m-auto py-5 container text-white">
+
+    <!-- Clear Button -->
+    <section class="py-3 align-right">
+      <button class="btn btn-danger" id="clear-btn">Clear</button>
+    </section>
+    <!-- Clear Button -->
+
+    <!-- Inputs -->
+    <section>
+
+      <!-- 1kk Price -->
+      <section class="pb-3">
+        <h6>1kk Price</h6>
+        <input type="text" id="million-price" class="decimal-num">
+      </section>
+      <!-- 1kk Price -->
+
+      <section class="py-3">
+        <h6>Damage Done</h6>
+        <input type="text" id="damage-done" placeholder="ex: 2" class="int-num">
+      </section>
+
+      <section class="py-3">
+        <h6>Battle Hero Medal Count</h6>
+        <input type="text" id="bh-count" class="int-num">
+      </section>
+
+    </section>
+    <!-- Inputs -->
+
+    <!-- Used Resources -->
+    <section>
+      <div class="resource-container my-2" *ngFor="let resource of resources">
+        <h5><i class="fas fa-plus pr-3"></i>{{resource.name}}</h5>
+
+        <div class="row bg-white m-0 info">
+
+          <div class="col-md py-3 align-items-center d-flex">
+            <input type="text" class="form-control int-num" [id]="resource.before_id" placeholder="Initial">
+          </div>
+
+          <div class="col-md py-3 align-items-center d-flex">
+            <input type="text" class="form-control int-num" [id]="resource.after_id" placeholder="Leftovers">
+          </div>
+
+          <div class="col-md py-3 align-items-center d-flex">
+            <input type="text" class="form-control decimal-num" [id]="resource.price_id" placeholder="Price">
+          </div>
+
+          <div class="col p-3 align-items-center d-flex">
+
+            <div class="row">
+
+              <div class="col-md-12 p-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" disabled [id]="resource.intOnlyId">
+                  <label class="custom-control-label text-muted" [for]="intOnlyId">Integer Numbers Only (excluding
+                    price)</label>
+                </div>
+              </div>
+
+              <div class="col-md-12 p-1">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" disabled [id]="resource.leftOversId">
+                  <label class="custom-control-label text-muted" [for]="leftOversId">Leftovers is less than
+                    the initial</label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Used Resources -->
+
+    <!-- Calculate Button -->
+    <section>
+      <button class="btn btn-success my-3" id="calculate">Calculate</button>
+    </section>
+    <!-- Calculate Button -->
+
+    <!-- Outputs -->
+    <section>
+
+      <h5 class="section-secondary-title">Results</h5>
+
+      <section class="py-3">
+        <h6>Payment</h6>
+        <input type="text" class="output" id="payment">
+      </section>
+
+      <section class="py-3">
+        <h6>Expenses</h6>
+        <input type="text" class="output" id="expenses">
+      </section>
+
+      <section class="py-3">
+        <h6>Profit</h6>
+        <input type="text" class="output" id="profit">
+      </section>
+
+    </section>
+    <!-- Outputs -->
+
+  </section>
+
+</section>

@@ -1,0 +1,19 @@
+
+h1 {
+  font-weight: bolder;
+  color: white;
+  padding: 5%;
+  margin: 0;
+
+}
+
+div {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)),
+    url(../../assets/images/page-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}

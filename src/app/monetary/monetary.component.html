@@ -1,0 +1,210 @@
+<section class="main-bg p-5">
+
+  <!-- Top Title / Large Screen -->
+  <div id="top" class="media d-none d-md-flex">
+    <img class="mr-3 align-self-center section-icon" src="assets/images/headings/mm-icon.svg">
+    <div class="media-body">
+      <h1 class="mt-0 section-title">Monetary</h1>
+      <h5 class="section-secondary-title">Marking Money is Art</h5>
+    </div>
+  </div>
+  <!-- Top Title / Large Screen -->
+
+  <!-- Top Title / Small Screen -->
+  <div class="d-block d-md-none text-center my-5">
+    <img class="section-icon" src="assets/images/headings/mm-icon.svg">
+    <h1 class="mt-0 section-title">Monetary</h1>
+    <h5 class="section-secondary-title">Marking Money is Art</h5>
+  </div>
+  <!-- Top Title / Small Screen -->
+
+  <section class="m-auto container text-white">
+    <!-- Money Market -->
+    <section class="py-3">
+
+      <h2 class="text-center">Money Market</h2>
+
+      <!-- Money Market Controls -->
+      <section id="money-market-container">
+
+        <!-- Clear Button -->
+        <section class="py-3 align-right">
+          <button class="btn btn-danger" id="clear-btn-mm">Clear</button>
+        </section>
+        <!-- Clear Button -->
+
+        <!-- Inputs -->
+        <section>
+
+          <section class="py-3">
+            <h6>Value</h6>
+            <input type="text" id="mm-value" class="decimal-num-mm">
+          </section>
+
+          <section class="py-3">
+            <h6>Sell Price</h6>
+            <input type="text" id="mm-sell-price" class="decimal-num-mm">
+          </section>
+
+          <section class="py-3">
+            <h6>Buy Price</h6>
+            <input type="text" id="mm-buy-price" class="decimal-num-mm">
+          </section>
+
+          <!-- Options -->
+          <div class="row py-3">
+
+            <div class="col-md-12">
+              <h5>Options</h5>
+            </div>
+
+
+            <div class="col-md-10 py-3">
+              <h6 class="mm-option">Repetition</h6>
+              <input type="text" id="mm-input" class="int-num-mm">
+            </div>
+
+            <div class="col-md-2 toggle-container py-3">
+              <input class="mm-toggle" type="checkbox">
+            </div>
+
+          </div>
+          <!-- Options -->
+
+        </section>
+        <!-- Inputs -->
+
+        <!-- Calculate Button -->
+        <section class="py-3">
+          <button class="btn btn-success" id="mm-calculate">Calculate</button>
+        </section>
+        <!-- Calculate Button -->
+
+        <!-- Outputs -->
+        <section class="row">
+
+          <section class="py-3 col-md-12">
+            <h6>Gains</h6>
+            <input type="text" class="output" id="gains">
+          </section>
+
+          <section class="pt-3 col-md-3">
+            <h6>Overflow</h6>
+            <input type="text" class="output" id="overflow">
+          </section>
+
+          <section class="pt-3 col-md-3 d-flex align-items-end">
+            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Deatils</button>
+          </section>
+
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Report</h5>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group">
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Outputs -->
+
+
+
+      </section>
+      <!-- Money Market Controls -->
+
+    </section>
+    <!-- Money Market -->
+
+    <!-- ------------------------------------- -->
+    <hr class="bg-white my-5">
+    <!-- ------------------------------------- -->
+
+    <!-- Loaning System -->
+    <section id="loan-system-container">
+
+      <h2 class="text-center">Loaning System</h2>
+
+      <!-- Loaning System Controls -->
+      <section>
+
+        <!-- Clear Button -->
+        <section class="pb-3 align-right">
+          <button class="btn btn-danger" id="clear-btn-ls">Clear</button>
+        </section>
+        <!-- Clear Button -->
+
+        <!-- Inputs -->
+        <section>
+
+          <section class="py-3">
+            <h6>Value</h6>
+            <input type="text" id="ls-value" class="decimal-num-ls">
+          </section>
+
+          <!-- Options -->
+          <div class="row py-3">
+
+            <div class="col-md-12">
+              <h5>Interest Type</h5>
+            </div>
+
+            <div class="col-md-10 py-3">
+              <h6 class="ls-option">Static</h6>
+              <input type="text" id="ls-input" class="decimal-num-ls">
+            </div>
+
+            <div class="col-md-2 py-3 toggle-container">
+              <input class="ls-toggle" type="checkbox">
+            </div>
+
+          </div>
+          <!-- Options -->
+
+          <section class="py-3">
+            <h6>Duration</h6>
+            <input type="text" id="ls-duration" class="int-num-ls">
+          </section>
+
+        </section>
+        <!-- Inputs -->
+
+        <!-- Calculate Button -->
+        <section class="py-3">
+          <button class="btn btn-success" id="ls-calculate">Calculate</button>
+        </section>
+        <!-- Calculate Button -->
+
+        <!-- Outputs -->
+        <section class="row">
+          <section class="py-3 col-md-12">
+            <h6>Gains</h6>
+            <input type="text" class="output" id="ls-gains">
+          </section>
+          
+          <section class="py-3 col-md-3">
+            <input type="text" class="output" id="loan-increament" placeholder="increament">
+          </section>
+        </section>
+        <!-- Outputs -->
+
+      </section>
+      <!-- Loaning System Controls -->
+
+    </section>
+    <!-- Loaning System -->
+
+  </section>
+
+</section>

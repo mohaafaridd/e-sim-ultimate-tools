@@ -1,0 +1,50 @@
+h2 {
+  opacity: 1;
+  transition: all 1s;
+}
+
+h2,
+h3 {
+  color: white;
+  text-align: center;
+  padding: 2% 0%;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 18rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  background-color: #2274a588;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.card:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.card:hover h2 {
+  opacity: 1;
+}

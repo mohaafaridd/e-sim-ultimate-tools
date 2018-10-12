@@ -1,0 +1,144 @@
+<section class="main-bg p-5">
+
+  <!-- Top Title / Large Screen -->
+  <div id="top" class="media d-none d-md-flex">
+    <img class="mr-3 align-self-center section-icon" src="assets/images/headings/tc-icon.svg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h1 class="mt-0 section-title">Two Clickers</h1>
+      <h5 class="section-secondary-title">Stock! The war is coming</h5>
+    </div>
+  </div>
+  <!-- Top Title / Large Screen -->
+
+  <!-- Top Title / Small Screen -->
+  <div class="d-block d-md-none text-center my-5">
+    <img class="section-icon" src="assets/images/headings/tc-icon.svg">
+    <h1 class="mt-0 section-title">Two Clickers</h1>
+    <h5 class="section-secondary-title">Stock! The war is coming</h5>
+  </div>
+  <!-- Top Title / Small Screen -->
+
+  <section class="m-auto container text-white py-5" id="tc-container">
+
+    <!-- Inputs -->
+    <section class="row">
+
+      <!-- Clear Button -->
+      <section class="pb-3 col-md-12 py-3 align-right">
+        <button class="btn btn-danger" id="tc-clear-btn">Clear</button>
+      </section>
+      <!-- Clear Button -->
+
+      <div class="col-md-12 py-3">
+        <h6>Current Gold</h6>
+        <input type="text" id="current-gold" class="decimal-num">
+      </div>
+
+      <div class="col-md-12 py-3">
+        <h6>Salary per day</h6>
+        <input type="text" id="salary-per-day" class="decimal-num">
+      </div>
+
+      <div class="col-md-6 py-3">
+        <h6>Food Limits</h6>
+        <input type="text" id="food-limits" class="int-num">
+      </div>
+
+      <div class="col-md-6 py-3">
+        <h6>Gift Limits</h6>
+        <input type="text" id="gift-limits" class="int-num">
+      </div>
+
+      <div class="col-md-12 py-3">
+        <h6>Medkits</h6>
+        <input type="text" id="medkits" class="int-num">
+      </div>
+
+      <div class="col-md-4 py-3">
+        <h6>Food Price</h6>
+        <input type="text" id="food-price" class="decimal-num">
+      </div>
+
+      <div class="col-md-4 py-3">
+        <h6>Gift Price</h6>
+        <input type="text" id="gift-price" class="decimal-num">
+      </div>
+
+      <div class="col-md-4 py-3">
+        <h6>Weapons Price</h6>
+        <input type="text" id="weapon-price" class="decimal-num">
+      </div>
+
+      <div class="col-lg-9 py-3">
+        <h6>Duration</h6>
+        <input type="text" id="duration" class="int-num">
+      </div>
+
+      <div class="col-lg-3 toggle-container py-3">
+        <h6 class="input-label mx-2">Motivating</h6>
+        <input type="checkbox" class="mx-3" id="motivating-state">
+      </div>
+
+      <!-- Calculate Button -->
+      <section class="col-md-12 py-3">
+        <button class="btn btn-success" id="calculate-tc">Calculate</button>
+      </section>
+      <!-- Calculate Button -->
+
+    </section>
+    <!-- Inputs -->
+
+
+    <!-- Output -->
+    <section>
+      <div class="row">
+
+          <div class="col-md-12 py-3">
+              <h6 class="input-label mx-2">Total Gold</h6>
+              <input type="text" id="total-gold" class="output">
+            </div>
+
+        <!-- Food Output -->
+        <div class="col-md-4 py-3" *ngFor="let resource of resources">
+
+          <section class="border border-success rounded shadow p-3">
+
+            <div class="toggle-container py-3">
+              <input type="checkbox" [id]="resource.state" class="resource-state" checked>
+            </div>
+
+            <h5>{{resource.name}}</h5>
+
+            <section class="py-3">
+              <h6>Needed</h6>
+              <input type="text" [id]="resource.need_id" class="output">
+            </section>
+
+            <section class="py-3">
+              <h6>Affordable</h6>
+              <input type="text" [id]="resource.affordable_id" class="output">
+            </section>
+
+            <section class="py-3">
+              <h6>Payment</h6>
+              <input type="text" [id]="resource.payment_id" class="output">
+            </section>
+
+          </section>
+
+        </div>
+        <!-- Food Output -->
+
+        <div class="col-md-12 py-3">
+          <h6 class="input-label mx-2">Leftover</h6>
+          <input type="text" id="leftover-gold" class="output">
+        </div>
+
+      </div>
+    </section>
+    <!-- Output -->
+
+
+  </section>
+
+</section>

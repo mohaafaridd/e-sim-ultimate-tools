@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.section-title,
+.section-secondary-title {
+  text-transform: uppercase;
+}
+
+.section-title,
+.section-secondary-title,
+.input-label {
+  color: white;
+}
+
+.section-title,
+.input-label {
+  font-weight: bold;
+}
+
+.section-icon {
+  width: 4rem;
+}
+
+.main-bg {
+  background-color: #424242;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+
+body{
+  background-color: #424242;
+}
+
+.align-right{
+  text-align: right;
+}
+
+h5, h1, .input-label, label, small{
+  user-select: none !important;          /* Likely future */      
+}
